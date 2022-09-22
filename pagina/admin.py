@@ -4,6 +4,7 @@ from .models import Usuarios
 # Register your models here.
 class UsuariosAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'nombre',
         'registro',
         'edad',

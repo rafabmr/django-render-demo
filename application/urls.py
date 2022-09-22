@@ -22,10 +22,10 @@ urlpatterns = [
     path('', pagina.index),
     path('admin/', admin.site.urls),
     path('json/', pagina.json),
+    path('json/<int:cantidad>', pagina.json),
     path('pagina1/', pagina.pagina1),
     path('pagina2/', pagina.pagina2),
     path('pagina2/<str:nombre>', pagina.pagina2),
     path('pagina3/', pagina.pagina3),
     path('model/', pagina.paginamodel),
-
 ]
